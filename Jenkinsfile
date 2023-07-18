@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             steps {
                 dir("C:\\Users\\dommarcor\\src\\jenkins\\firstjavapipeline\\my-app") {
-                sh 'mvn -B -DskipTests clean package'
+                bat 'mvn -B -DskipTests clean package'
                 }
             }
         }
